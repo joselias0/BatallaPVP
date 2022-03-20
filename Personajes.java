@@ -12,7 +12,7 @@ public class Personajes {
     private int ataque;
     private int defensa;
     private double acierto;
-    
+    private String tipoAtaque;
     //metodo utilizado para insertar datos
     public Personajes(){
      this.setNombre("Luchador");
@@ -21,6 +21,9 @@ public class Personajes {
      this.setDefensa(30);
      this.setAcierto(0.9);
     }
+    
+     
+ 
     
      
     //Modificar el nombre de personaje
@@ -85,4 +88,15 @@ public class Personajes {
     if(this.getSalud()<=0) vida=false;
     return vida;
     }
+    
+    
+   public Personajes(String nombre,int salud, int ataqued,int defensad,double ta,String tipoAta) 
+   {
+    Nombre= nombre;
+    Salud=salud;
+    ataque= ataqued;
+    defensa=defensad;
+    acierto=ta;
+    tipoAtaque=tipoAta;
+  }
 }
